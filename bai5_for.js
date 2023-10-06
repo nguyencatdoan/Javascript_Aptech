@@ -83,6 +83,7 @@ function cau1f_2(){
         //Ví dụ vị trí 1 là PhanTuThuI = 3 (arr[6])
         //Vì vị trí số 3 đã xuất hiện trước đó vào nên TanSuatXuatHien[3] = 1 (xuất hiện lần đầu) + 1
         //Mong Cát ĐOan tương lai hiểu ý tôi :#D
+        //Qua while để tìm câu dễ hiểu hơn
     }
     console.log("Dem lan xuat hien",TanSuatXuatHien)
 
