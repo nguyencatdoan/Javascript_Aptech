@@ -9,7 +9,6 @@ function cau1a(){
         console.log("Vi tri",i+1,"co phan tu",arr[i])
     }
 }
-
 // tổng các phần tử mảng
 function cau1b(){
     let Tong = 0
@@ -18,7 +17,6 @@ function cau1b(){
     }
     console.log("Tong cua arr:",Tong)
 }
-
 // phần tử lớn nhất, nhỏ nhất trong mảng
 function cau1c(){
     let lonnhat = arr[0]
@@ -37,7 +35,6 @@ function cau1c(){
     console.log("So nho nhat:",nhonhat)
 
 }
-
 //trung bình cộng các phần tử trong mảng
 function cau1d(){
     let Tong = 0
@@ -46,7 +43,6 @@ function cau1d(){
     }
     console.log("Trung binh cong:",Tong/DoDaiMang)
 }
-
 //Đảo ngược thứ tự các phần tử trong mảng
 function cau1e(){
     let arr1 = []
@@ -88,19 +84,44 @@ function cau1f_2(){
     console.log("Dem lan xuat hien",TanSuatXuatHien)
 
 }
-
-function cau1k(){
-    let soChan = []
-    let soLe = []
-    for (let i = 0; i < DoDaiMang; i++){
-        if (arr[i] % 2 == 0){
-            soChan.push(arr[i])
-        }
-
-        if (arr[i] % 2 !== 0){
-            soLe.push(arr[i])
+// Tăng dần
+function cau1i(){
+    for(let i = 0; i < DoDaiMang; i++){
+        for(let j = i + 1; j < DoDaiMang;j++){
+            if(arr[i] > arr[j]){
+                let temp = arr[j]
+                arr[j] = arr[i]
+                arr[i] = temp
+            }
         }
     }
-    console.log("So chan",soChan)
-    console.log("So le",soLe)
+    console.log('Tang dan',arr)
+
 }
+// Giảm dần
+function cau1j(){
+    for(let i = 0; i < DoDaiMang; i++){
+        for(let j = i + 1; j < DoDaiMang;j++){
+            if(arr[i] < arr[j]){
+                let temp = arr[j]
+                arr[j] = arr[i]
+                arr[i] = temp
+            }
+        }
+    }
+    console.log('Giam dan',arr)
+
+}
+// số lẻ số chẵn
+function cau1k(){
+    for(let i = 0; i < DoDaiMang; i++){
+        if (arr[i] % 2 == 0) {
+            console.log('Vi tri',i,'co so chan trong mang: ', arr[i])
+        }
+
+        else if (arr[i] % 2 !== 0) {
+            console.log('Vi tri',i,' co so le trong mang: ', arr[i])
+        }
+    }
+}
+
